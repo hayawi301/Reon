@@ -14,7 +14,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == '!مرطبا!':
+    if message.content == 'مرحبا!':
         await message.channel.send('عمل بنجاح')
 
-client.run('MTU0NTYyMzQ0MzU3MDA0MDk3Mg.GVSXwJ.ZPAg-dZ7rrECycWMUN7GEcfDYftKO4E6bhBn9U')
+client.run('MTU0NTYyMzQ0MzU3MDA0MDk3Mg.GrweA8.nH5IDAcpx6lEk7SiuLsf9aDV_a3z8lRKKvvu9I')
