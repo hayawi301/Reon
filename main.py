@@ -17,4 +17,4 @@ async def on_message(message):
     if message.content == '!مرطبا!':
         await message.channel.send('عمل بنجاح')
 
-client.run('MTU0NTYyMzQ0MzU3MDA0MDk3Mg.GxMClh.UifW-DUzKMphLDQA2jZWRkr8l43y6BhcOujhMw')
+client.run('MTU0NTYyMzQ0MzU3MDA0MDk3Mg.GVSXwJ.ZPAg-dZ7rrECycWMUN7GEcfDYftKO4E6bhBn9U')
