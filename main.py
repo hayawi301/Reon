@@ -1,3 +1,4 @@
+import os
 import discord
 
 intents = discord.Intents.default()
@@ -7,14 +8,14 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print("Bot is ready")
+    print(f"Bot is ready: {client.user}")
 
 @client.event
 async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content == '!hello!':
-        await message.channel.send('عمل بنجاح')
+    if message.content == "!hello!":
+        await message.channel.send("عمل بنجاح")
 
-client.run('MTU0NTYyMzQ0MzU3MDA0MDk3Mg.G4JPQM.yfYFk6paGCAP457dZCTShUeKHrBovUmfsl2hNI')
+client.run(os.getenv("DISCORD_TOKEN"))
