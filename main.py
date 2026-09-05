@@ -7,7 +7,7 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'البوت اشتغل وصار أونلاين باسم {client.user}')
+    print("Bot is ready")
 
 @client.event
 async def on_message(message):
